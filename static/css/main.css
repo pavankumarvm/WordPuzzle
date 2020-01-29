@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:auto;
+}
+body{
+	background-image:white;
+	background-image:linear-gradient(rgba(44, 88, 231, 0.8),rgba(9, 128, 55, 0.8));
+}
+
+.main {
+	display: grid;
+	grid-template-columns:auto auto auto;
+	margin: 5px auto;
+	padding-left:4em;
+}
+
+.left{
+	align-content:center;
+	padding: auto;
+}
+
+
+canvas {
+	position: absolute;
+	display: block;
+	float: left;
+}
+
+.gameboard{
+	border: 8px solid black;
+	background-image:linear-gradient(rgba(255,255,255,0.80),rgba(255,255,255,0.80)),url(../images/hub.jpg);
+	background-size: cover;
+	border-radius: 3px;
+	box-shadow: 0 10px 6px -6px rgba(255, 0, 0, 0.5);
+}
+
+.letters{
+	font-family: 'Fresca', serif;
+}
+
+.letters span{
+	float:left;
+	width: 32px;
+	height: 32px;
+	color:#100756;
+	line-height: 32px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.right {
+	float:right;
+	display: grid;
+	grid-template-rows:110px auto auto;
+	grid-row-gap: 10px;
+}
+
+.clockdiv{
+	width:100%;
+	padding-left:60px;
+}
+.clock{
+	font-family: sans-serif;
+	height:100px;
+	width:auto;
+    color: #fff; 
+	display: inline-block; 
+    font-weight: 100; 
+    text-align: center; 
+    font-size: 30px; 
+} 
+.clock > div{ 
+	width:80px;
+    padding: 10px;
+    border-radius: 3px; 
+    background: #00BF96; 
+    display: inline-block; 
+} 
+.clock div > span{
+	width:60px; 
+    padding: 10px;
+    border-radius: 3px; 
+    background: #00816A; 
+    display: inline-block; 
+} 
+.smalltext{ 
+    padding-top: 5px; 
+    font-size: 16px; 
+} 
+
+.wordblock{
+	width:400px;
+	height:auto;
+	border: 10px solid #056448;
+	border-radius: 3px;
+	box-shadow: 0 10px 6px -6px rgb(0, 26, 255);
+	background:linear-gradient(rgba(255,255,255,0.80),rgba(255,255,255,0.80)),url(../images/hub.jpg);
+	background-size: cover;
+}
+.words{
+	font-size: 1.3em;
+	font-family: 'Fresca', serif;
+}
+
+.words span {
+	float:left;
+	width: 200px;
+	height: 40px;
+	line-height: 45px;
+	text-align: center;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.result{
+	width:auto;
+	height:180px;
+	border:10px solid red;
+	background:white;
+	font-size:2em;
+	text-align: center;
+}
+
+#score{
+	font-size:2.5em;
+	color:blue
+}
+
+#outof{
+	color:green;
+	font-size:2em;
+}

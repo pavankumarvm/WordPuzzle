@@ -1,0 +1,112 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+html,body {
+    margin: 0 auto;
+    font-family: Josefin Sans;
+    text-rendering: optimizeLegibility;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.header__background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+nav {
+    display: grid;
+    position: fixed;
+    top: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 18px;
+    transition: background-color 0.4s ease-out;
+}
+
+nav.scroll {
+    top: 0em;
+    height: 5em;
+    background-image: linear-gradient(90deg, rgb(129, 200, 129), rgb(123, 135, 219));
+    color: #eef;
+    z-index: 10;
+}
+
+.hero {
+    display: grid;
+}
+
+.hero--container {
+  background-image: linear-gradient(65deg, rgba(26, 32, 218, 0.55), rgba(85, 208, 45, 0.71)), url(../images/hero.png);
+    background-position-x: center;
+    display: grid;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    height: 100vh;
+    width: 107vw;
+}
+
+.hero--nav {
+    display: grid;
+    color: white;
+    grid-template-columns: 100px 234px auto;
+    list-style-type: none;
+    text-shadow: 0px 3px 3px black;
+    font-size: 20px;
+    align-items: center;
+}
+
+.hero--nav .logo {
+    overflow: hidden;
+    position: relative;
+    width: 68%;
+    border-radius: 50%;
+    top: -9px;
+    right: -7px;
+}
+
+.hero--nav .link:hover {
+    color: #bbb;
+}
+.hero--nav .link.one {
+    font-size: 42px;
+}
+.hero--text{
+    font-size:4em;
+    text-shadow: 0px 5px 5px black;
+    align-self: center;
+    font-weight: 100;
+    top: 9%;
+    text-align: center;
+}
+.inst{
+    font-size:2em;
+    text-align:left;
+    width:100%;
+    margin:auto;
+    padding-left:50px;
+    line-height:30px;
+}
+/*main*/
+#Start{
+	padding:auto;
+	box-sizing: border-box;
+	height: 56px;
+	width:300px;
+	cursor: pointer;
+	background: -webkit-linear-gradient(left,rgb(129, 211, 112) 0%, rgb(47, 109, 222) 100%);
+	border: none;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600; color: rgb(255, 255, 255);
+	line-height: 1;
+	border-radius: 30px;
+	transition: 200ms ease 0s;
+}

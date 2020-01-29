@@ -1,26 +1,56 @@
 <html lang="en">
 <head>
   	<meta charset="utf-8">
-  	<title>Word Search!</title>
+  	<title>Word Puzzle!</title>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fresca">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Happy+Monkey">
-      <script src="jquery.min.js"></script>
-      <link rel="stylesheet" href="main.css">
+      <script src="static/js/jquery.min.js"></script>
+      <link rel="stylesheet" href="static/css/main.css">
+      <script src="static/js/main.js"></script>
+      <script src="static/js/clock.js"></script>
 </head>
 <body>
-    <header>Word Puzzle</header>
-	<div id="main">
-		<div class="left">
-      <div class="letters">
-        <canvas id="a" width="800" height="800"></canvas>
-        <canvas id="c" width="800" height="800"></canvas>
-      </div>
+	<div class="main">
+    <div class="left">
     </div>
     <div class="right">
-      <div class="words">
+      <div class="clockdiv">
+        <div class="clock"> 
+          <div> 
+            <span class="hours" id="hour">0</span> 
+            <div class="smalltext">Hours</div> 
+          </div> 
+          <div> 
+            <span class="minutes" id="minute">10</span> 
+            <div class="smalltext">Minutes</div> 
+          </div> 
+          <div> 
+            <span class="seconds" id="second">3</span> 
+            <div class="smalltext">Seconds</div> 
+          </div>
+        </div>
       </div>
-  	</div>
+      <div class="wordblock">
+        <div class="words"></div>
+      </div>
+      <div class="result">
+        Score:
+        <br>
+        <span id="score">0</span><span id="outof">/20</span>
+        <br>
+      </div>
+    </div>
   </div>
-  <script src="main.js"></script>
+  <script type="text/javascript">
+    //to stop right-clicking on page
+    window.oncontextmenu=event=>{
+      event.preventDefault()
+    };
+
+    //prompt before refreshing
+    window.onbeforeunload = function() {
+      return "You cannot refresh this page";
+    }
+  </script>
 </body>
 </html>

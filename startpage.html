@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>Coding Hub</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="charset" content="utf-8">
+    <meta name="google-site-verification" content="HKE8WuU9jmTqLYJQeGP3ZPbHInVZybJ094VH6DEJJ0c">
+    <link rel="icon" type="image/png" href="static/images/hub.jpg">
+    <link rel="apple-touch-icon" type="image/png" href="static/images/hub.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="static/css/startpage.css" rel="stylesheet">
+    <script src="static/js/startpage.js"></script>
+</head>
+
+<body>
+        <!--hero container-->
+        <div class="hero">
+            <div class="hero--container">
+                <nav id="navbar">
+                    <div class="hero--nav">
+                        <img src="static/images/hub.jpg" class="logo">
+                        <li class="link one"><a href="/">Coding Hub</a></li>
+                    </div>
+                </nav>
+                <h1 class="hero--text">
+                    Word Puzzle
+                </h1>
+                <div class="inst">
+                    <h3>Instructions :</h3>
+                    <p>
+                        <li>You will be given a 20 X 20 matrix.</li>
+                        <li>Words are arranged vertically,horizontally,diagonally and also in reverse order.</li>
+                        <li>You have to find the words in matrix which have been mentioned in box beside it.</li>
+                        <li>You have to click on first letter of word then drag, until the last letter to select it.</li>
+                        <li>You can also drag in reverse order(from last letter to first) to select it.</li>
+                        <li>Once a word is found then it gets striked through in the box.</li>
+                        <li>There will be 10 minutes. Timer will start once you click start game.</li>
+                        <li>Find all words as soon as possible.</li>
+                        <li>Assessment will be based on time and no. of words found.</li>
+                    </p>
+                </div>
+                <div class="buttonline" style="height:56px;margin-bottom:5px;">
+                    <div class="buttonbox" 	style="height:56px;width:320px;margin: 0 auto;">
+                        <button id="Start" onclick="startGame(),startClock()">Start Game</input>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--hero container end-->
+</body>
+</html>
