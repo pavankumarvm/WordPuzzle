@@ -25,24 +25,51 @@
                 <h1 class="hero--text">
                     Word Puzzle
                 </h1>
-                <div class="inst">
-                    <h3>Instructions :</h3>
-                    <p>
-                        <li>You will be given a 20 X 20 matrix.</li>
-                        <li>Words are arranged vertically,horizontally,diagonally and also in reverse order.</li>
-                        <li>You have to find the words in matrix which have been mentioned in box beside it.</li>
-                        <li>You have to click on first letter of word then drag, until the last letter to select it.</li>
-                        <li>You can also drag in reverse order(from last letter to first) to select it.</li>
-                        <li>Once a word is found then it gets striked through in the box.</li>
-                        <li>There will be 10 minutes. Timer will start once you click start game.</li>
-                        <li>Find all words as soon as possible.</li>
-                        <li>Assessment will be based on time and no. of words found.</li>
-                    </p>
-                </div>
-                <div class="buttonline" style="height:56px;margin-bottom:5px;">
-                    <div class="buttonbox" 	style="height:56px;width:320px;margin: 0 auto;">
-                        <button id="Start" onclick="startGame(),startClock()">Start Game</input>
+                <div class="instruct">
+                    <div class="inst">
+                        <h2>Instructions :</h2>
+                        <p>
+                            <li><b><i>You have to be registered, using your Email-ID to play the game.</i></b></li>
+                            <li>You will be given a 20 X 20 matrix.</li>
+                            <li>Words are arranged vertically,horizontally,diagonally and also in reverse order.</li>
+                            <li>You have to find the words in matrix which have been mentioned in box beside it.</li>
+                            <li>You have to click on first letter of word then drag, until the last letter to select it.</li>
+                            <li>You can also drag in reverse order(from last letter to first) to select it.</li>
+                            <li>Once a word is found then it gets strike-through in the box.</li>
+                            <li>There will be 10 minutes. Timer will start once you click start game.</li>
+                            <li>Find all words as soon as possible.</li>
+                            <li>Assessment will be based on time and no. of words found.</li>
+                            <li><b>Important :</b>Guess word in puzzle have 5 bonus points if found.</li>
+                            <li>You must mark it on puzzle before the last-word and before timer runs out,for bonus points.</li>
+                        </p>
                     </div>
+                    <form class="right" action="puzzle.html" method="GET">
+                        <div class="line" style="height: 48px;">
+                            <div class="box">
+                                <input type="email" name="Email" id="email" placeholder="Email-ID" class="Input" maxlength="" required="" onblur="validate()" autocomplete="off">
+                                <div class="requirements">
+                                    Must be a valid email address.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line" style="height: 48px;">
+                        </div>
+                        <div class="line" style="height: 48px;margin-top:20px;">
+                            <div class="box">
+                                <input type="number" id="team" maxlength="2" name="Team" class="Input" placeholder="Team No." required="" readonly>
+                            </div>
+                        </div>
+                        <div class="line" style="height: 48px;margin-top:20px;">
+                            <div class="box">
+                                <input type="input" name="Name" placeholder="First Name only" class="Input" maxlength="" required="">
+                            </div>
+                        </div>
+                        <div class="buttonline" style="height:56px;margin-top:20px;">
+                            <div class="buttonbox" 	style="height:56px;width:320px;margin: 0 auto;">
+                                <input type="submit" id="Start" value="Start Game">
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

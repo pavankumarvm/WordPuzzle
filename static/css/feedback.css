@@ -1,0 +1,98 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+html,
+body {
+    margin: 0 auto;
+    font-family: Josefin Sans;
+    text-rendering: optimizeLegibility;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-image: linear-gradient(65deg, rgba(26, 32, 218, 0.55), rgba(85, 208, 45, 0.71)), url(../images/hero.png);
+    background-size: cover;
+}
+.hero {
+    display: grid;
+    background-position: center;
+    display: grid;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero--container {
+    text-align: center;
+    height:120px;
+}
+
+.logo {
+    overflow: hidden;
+    position: absolute;
+    top:10px;
+    left:10px;
+    width: 68px;
+    height:68px;
+    border-radius: 50%;
+}
+.one {
+    font-size: 55px;
+}
+
+.hero--nav .link:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+.form-container{
+    background-color: aliceblue;
+    margin-left: 380px;
+    height:auto;
+    width:600px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 20px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+    border-radius: 8px;	
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color:black;
+}
+
+#testform{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#comments{
+    box-sizing: border-box;
+    z-index: 5;
+    height: 100px;
+    width: 530px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid rgb(187, 184, 184);
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    line-height: 1;
+    padding: 12px 20px;
+    transition: border-color 200ms ease 0s, box-shadow 200ms ease 0s;
+}
+
+#submit{
+    box-sizing: border-box;
+    z-index: 15;
+    height: 56px;
+    width: 320px;
+    margin-left: 105px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, rgb(129, 211, 112) 0%, rgb(47, 109, 222) 100%);
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    border-radius: 30px;
+}

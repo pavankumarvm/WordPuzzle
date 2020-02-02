@@ -84,24 +84,63 @@ nav.scroll {
     align-self: center;
     font-weight: 100;
     top: 9%;
+    margin-bottom: 0px;
     text-align: center;
 }
+.instruct{
+    display: grid;
+    grid-template-columns:1000px auto;
+}
 .inst{
-    font-size:2em;
+    font-size:1.5em;
     text-align:left;
     width:100%;
-    margin:auto;
+    margin-top:0px;
     padding-left:50px;
     line-height:30px;
 }
 /*main*/
+
+.right{
+    display:block;
+    padding-top:100px;
+}
+
+.line,.buttonline{
+    width: 320px;
+}
+
+.box {
+    height: 48px;
+    width: 320px;
+    margin: auto auto;
+    ;
+}
+
+.Input {
+    box-sizing: border-box;
+    z-index: 17;
+    height: 48px;
+    width: 320px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid rgb(227, 227, 227);
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight:500;
+    color: rgb(0, 0, 0);
+    padding: 0px 20px;
+    transition: border-color 200ms ease 0s, box-shadow 200ms ease 0s;
+}
+
 #Start{
 	padding:auto;
 	box-sizing: border-box;
 	height: 56px;
-	width:300px;
+	width:320px;
 	cursor: pointer;
-	background: -webkit-linear-gradient(left,rgb(129, 211, 112) 0%, rgb(47, 109, 222) 100%);
+	background: -webkit-linear-gradient(left,rgba(233, 63, 21, 0.911)0%, rgba(39, 7, 219, 0.904) 100%);
 	border: none;
 	text-align: center;
 	font-size: 18px;
@@ -109,4 +148,34 @@ nav.scroll {
 	line-height: 1;
 	border-radius: 30px;
 	transition: 200ms ease 0s;
+}
+
+input[type="email"]:invalid:not(:focus){
+    background-color:white;
+}
+
+input[type="email"]:invalid:focus:not(:placeholder-shown){
+    background-image: linear-gradient(pink,white);
+}
+
+input[type="email"]:valid{
+    background-color: white;
+}
+
+input[type="email"]:invalid:focus:not(:placeholder-shown) ~ .requirements {
+      max-height: 200px;
+      padding:10px 30px 10px 50px;
+      width:240px;
+}
+
+.requirements {
+    background-image: linear-gradient(white,white);
+    border-radius:40px;
+    width:200px;
+    color: #999;
+    max-height: 0;
+    transition: 0.25s;
+    overflow: hidden;
+    color: red;
+    font-style: italic;
 }

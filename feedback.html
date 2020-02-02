@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="charset" content="utf-8">
+	<link rel="icon" type="image/png" href="static/images/hub.jpg">
+	<link rel="apple-touch-icon" type="image/png" href="static/images/hub.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="static/css/feedback.css" rel="stylesheet">
+  <script src="static/js/jquery.min.js"></script>
+  <script type="text/javascript" src="static/js/feedback.js"></script>
+</head>
+<body>
+	<!--hero container-->
+	<div class="hero">
+		<div class="hero--container">
+					<img src="static/images/hub.jpg" class="logo">
+					<a href="/">
+					<h1 class="one">Coding Hub</h1>
+					</a>
+        </div>
+        <div class="main">
+            <div class="form-container">
+                <h2 style="font-size: 30px;text-align: center;padding-top: 20px;margin-bottom:10px">Feedback</h2> 
+                <p style="padding-left:35px;font-weight: 600;text-decoration:underline;"> Please provide your feedback below: </p>
+                <form role="form" id="testform">
+                    <hr>
+                    <div class="row">
+                        <div class="form-group">
+                            <label>How do you rate your overall experience?</label>
+                            <p>
+                                <label class="radio-inline">
+                                    <input type="radio" name="Experience" id="radio_experience" value="Bad" >
+                                    Bad 
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="Experience" id="radio_experience" value="Average" >
+                                    Average 
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="Experience" id="radio_experience" value="Good" >
+                                    Good 
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="form-group">
+                            <label>How was the user interface?</label>
+                            <p>
+                                <label class="radio-inline">
+                                    <input type="radio" name="Interface" id="radio_experience" value="Poor" >
+                                    Poor
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="Interface" id="radio_experience" value="Intermediate" >
+                                    Intermediate
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="Interface" id="radio_experience" value="Excellent" >
+                                    Excellent
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <label for="comments"> Comments:</label>
+                        <div class="form-group">
+                            <textarea name="Comments" id="comments" placeholder="Your Suggestions are valuable!!!" maxlength="6000" rows="7"></textarea>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="form-group">
+                            <button type="submit" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+	</div>
+</body>
+</html>
